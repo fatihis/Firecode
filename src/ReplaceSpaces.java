@@ -2,7 +2,6 @@ import java.util.Objects;
 
 public class ReplaceSpaces {
 
-
     public static void main(String[] args) {
         String testString = "ıntellij is ready";
         testReplace(testString, "/", "ıntellij/is/ready");
@@ -19,6 +18,7 @@ public class ReplaceSpaces {
 
         testReplace("", "", "");
 
+        testReplace("new  test", "-", "new--test");
     }
 
     private static void testReplace(String a, String b, String expected) {
